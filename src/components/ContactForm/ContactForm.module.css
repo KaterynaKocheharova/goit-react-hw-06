@@ -1,0 +1,61 @@
+.form {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  padding: var(--big-box-padding);
+  background-color: var(--main-background-color);
+  border: 1px solid var(--first-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-box-shadow);
+  margin-bottom: var(--medium-mb);
+}
+
+.inputs-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .inputs-container {
+    width: unset;
+  }
+}
+
+.form-input-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  padding: 0.3rem;
+  border: 1px solid var(--first-color);
+  border-radius: var(--input-border-radius);
+  transition: border;
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid var(--first-color);
+}
+
+.error-message {
+  color: red;
+}
+
+.button {
+  align-self: center;
+  padding: var(--medium-button-padding);
+  background-color: var(--first-color);
+  border: none;
+  border-radius: var(--main-border-radius);
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--second-color);
+}

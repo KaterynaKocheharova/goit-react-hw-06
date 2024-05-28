@@ -1,0 +1,30 @@
+.container {
+  max-width: 95%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .top-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    flex-wrap: wrap;
+  }
+}
+
+.main-title {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: var(--medium-mb);
+}
+
+@media screen and (min-width: 700px) {
+  .main-title {
+    font-size: 4.5rem;
+  }
+}
